@@ -1,15 +1,14 @@
 <div class="FullPage">
-    <div class="main">
-        <!-- <form [formGroup]="registerForm" (ngSubmit)="Register()"> -->
-            <div class="left">
-                <div class="MainLogo">
-                    <mat-card-title class="mat-card-title"> <span style="color: rgb(81, 120, 226)">F</span><span
-                            style="color: rgb(214, 80, 98)">u</span><span style="color: rgb(231, 228, 39)">n</span><span
-                            style="color: rgb(81, 120, 226)">d</span><span style="color: rgb(7, 219, 53)">o</span><span
-                            style="color: rgb(214, 43, 71)">o</span>
-                    </mat-card-title>
-                    <h2>Create your Fundoo Account </h2>
-                </div>
+    <form [formGroup]="registerForm" (ngSubmit)="Register()">
+        <mat-card class="card">
+
+            <div class="FormFields">
+                <mat-card-title class="mat-card-title"> <span style="color: rgb(81, 120, 226)">F</span><span
+                        style="color: rgb(214, 80, 98)">u</span><span style="color: rgb(231, 228, 39)">n</span><span
+                        style="color: rgb(81, 120, 226)">d</span><span style="color: rgb(7, 219, 53)">o</span><span
+                        style="color: rgb(214, 43, 71)">o</span>
+                </mat-card-title>
+                <h2>Create your Fundoo Account </h2>
                 <div class="FirstLast">
                     <mat-form-field class="First" appearance="outline">
                         <mat-label>First name</mat-label>
@@ -26,6 +25,8 @@
                         <input matInput formControlName="Email">
                         <!-- <span class="gmail">@gmail.com</span> -->
                     </mat-form-field>
+                </div>
+                <div class="header2">
                     <h5>You can use letters, numbers & periods</h5>
                 </div>
                 <div class="PasswordAndConfirm">
@@ -38,27 +39,49 @@
                         <input matInput [type]=" show ? 'text':'password'">
                     </mat-form-field>
                 </div>
-                <div class="ShowPassword">
+                <div class="Header3">
                     <h5>Use 8 or more characters with a mix of letters, numbers & symbols</h5>
+                </div>
+                <!-- <div class="ShowPassword">
+                <h5>Use 8 or more characters with a mix of letters, numbers & symbols</h5>
+                <mat-checkbox (change)="ShowPassword()">Show Password</mat-checkbox>
+        </div>
+        <div class="SigninAndNextButton">
+            <div class="Signin">
+            <h3 style="color:DodgerBlue;">Sign in Instead</h3>
+        </div>
+                    <button mat-raised-button color="primary">Next</button>
+        </div>
+
+        </div>
+        <div class="right">
+                <img src="../../../assets/images.jpg" alt="RegisterPageLogo">
+                <div class="oneacc">
+                
+            </div>
+            </div> -->
+                <section class="checkbox">
                     <mat-checkbox (change)="ShowPassword()">Show Password</mat-checkbox>
-            </div>
-            <div class="SigninAndNextButton">
-                <div class="Signin">
-                <h3 style="color:DodgerBlue;">Sign in Instead</h3>
-            </div>
-                        <button mat-raised-button color="primary">Next</button>
-            </div>
+                </section>
+                <div class="SigninAndNextButton">
+                    <h3 style="color:DodgerBlue;">Sign in Instead</h3>
+                    <section>
+                        <div>
+                            <button mat-raised-button color="primary">Next</button>
+                        </div>
+                    </section>
+                </div>
 
             </div>
-            <div class="right">
+            <div class="logotitle">
+                <div class="Image">
                     <img src="../../../assets/images.jpg" alt="RegisterPageLogo">
-                    <div class="oneacc">
                     <h4>One account. All of Fundoo</h4>
-                    <h4>working for you.</h4>
+                    <div class="secondline">
+                        <h4>working for you.</h4>
+                    </div>
                 </div>
-                </div>
-        <!-- </form> -->
-
-
-    </div>
+            </div>
+        </mat-card>
+    </form>
 </div>

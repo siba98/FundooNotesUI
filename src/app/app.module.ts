@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { CreateNotesComponent } from './Components/create-notes/create-notes.component';
+import { IconsComponent } from './Components/icons/icons.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CreateNotesComponent } from './Components/create-notes/create-notes.com
     LoginComponent,
     ForgotComponent,
     ResetComponent,
-    CreateNotesComponent
+    CreateNotesComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,

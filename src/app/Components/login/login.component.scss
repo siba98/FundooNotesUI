@@ -14,12 +14,16 @@
     width: 400px;
 }
 .CreateAndNextButton{
-    width: 350px;
+    position: relative;
+    top: -10px;
+    width: 380px;
     display: flex;
     justify-content: space-between;
 }
 .ForgotPassword{
-    width:350px;
+    position: relative;
+    top: -30px;
+    width:385px;
     justify-content: flex-start;
 }
 .mat-card-title{
@@ -27,5 +31,5 @@
 }
 
 .mat-form-field-appearance-outline{
-    width: 360px;
+    width: 370px;
 }

@@ -1,0 +1,46 @@
+.FullPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+    width: 400px;
+    // justify-content: space-between;
+}
+.ResetButton{
+    width: 350px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.FirstHeader{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.EmailField{
+    .mat-form-field-appearance-outline{
+        width: 360px;
+    }
+}
+.PasswordField{
+    .mat-form-field-appearance-outline{
+        width: 360px;
+    }
+} 
+.ConfirmPasswordField{
+    .mat-form-field-appearance-outline{
+        width: 360px;
+    }
+}
+.example-section{
+    width: 350px;
+    margin-top: -20px;
+    justify-content: flex-start;
+}

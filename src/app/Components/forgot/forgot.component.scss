@@ -1,0 +1,38 @@
+.FullPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    width: 400px;
+}
+.NextButton{
+    width: 300px;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 20px;
+}
+.mat-card-title{
+    font-size: 25px;
+}
+.FirstHeader{
+   margin-top: 45px;
+   margin-bottom: 20px;
+}
+.SecondHeader{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.EmailField{
+    margin-top: -5px;
+}
+.mat-form-field-appearance-outline{
+    margin-top: -60px;
+    width: 340px;
+}

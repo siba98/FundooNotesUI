@@ -4,43 +4,28 @@
     align-items: center;
 }
 .card{
-    margin-top: 40px;
+    position: relative;
+    top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 440px;
+    height: 470px;
     width: 400px;
 }
 .CreateAndNextButton{
     width: 350px;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 .ForgotPassword{
     width:350px;
-    margin-top: -22px;
     justify-content: flex-start;
 }
 .mat-card-title{
     font-size: 25px;
 }
-.FirstHeader{
-    margin-top: 25px;
-    margin-bottom: 30px;
- }
-.SecondHeader{
-    margin-top: -20px;
-    margin-bottom: 10px;
-}
-.EmailField{
-    .mat-form-field-appearance-outline{
-        width: 360px;
-    }
-}
-.PasswordField{
-    .mat-form-field-appearance-outline{
-        width: 360px;
-    }
+
+.mat-form-field-appearance-outline{
+    width: 360px;
 }

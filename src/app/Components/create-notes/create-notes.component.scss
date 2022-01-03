@@ -19,7 +19,7 @@
     font-size: medium;
 }
 
-
+/////////////////////////////////////////
 .fullpage{
     display: flex;
     justify-content: center;
@@ -28,12 +28,12 @@
 }
 .card{
     width: 590px;
-    height: 20vh;
+    height: 10vh;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border : 1px solid rgba(207, 195, 195, 0.938);
+    border : 1px solid rgb(221, 199, 199);
 }
 .TitleAndNote{
     justify-content: space-between;
@@ -45,8 +45,4 @@
     border:none;
     outline:none;
     font-size: medium;
-}
-.icons{
-    display: flex;
-    gap: 40px;
 }

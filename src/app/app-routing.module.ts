@@ -14,7 +14,6 @@ const routes: Routes = [
   {path:"reset", component:ResetComponent},
   {path:"create-notes", component:CreateNotesComponent},
   {path:"icons", component:IconsComponent}
-
 ];
 
 @NgModule({

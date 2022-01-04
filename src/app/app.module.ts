@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { CreateNotesComponent } from './Components/create-notes/create-notes.component';
 import { IconsComponent } from './Components/icons/icons.component';
+import { NotesComponent } from './Components/notes/notes.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { IconsComponent } from './Components/icons/icons.component';
     ForgotComponent,
     ResetComponent,
     CreateNotesComponent,
-    IconsComponent
+    IconsComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,

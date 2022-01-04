@@ -6,6 +6,7 @@ import { ForgotComponent } from './Components/forgot/forgot.component';
 import { ResetComponent } from './Components/reset/reset.component';
 import { CreateNotesComponent } from './Components/create-notes/create-notes.component';
 import { IconsComponent } from './Components/icons/icons.component';
+import { NotesComponent } from './Components/notes/notes.component';
 
 const routes: Routes = [
   {path:"register", component:RegisterComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:"forgot", component:ForgotComponent},
   {path:"reset", component:ResetComponent},
   {path:"create-notes", component:CreateNotesComponent},
-  {path:"icons", component:IconsComponent}
+  {path:"icons", component:IconsComponent},
+  {path:"notes", component:NotesComponent}
 ];
 
 @NgModule({

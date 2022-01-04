@@ -23,6 +23,7 @@
 .UserName{
     .mat-form-field-appearance-outline{
         width: 340px;
+        // height: 14vh;
     }
 }
 // .gmail{border: 1px solid red;
@@ -73,91 +74,3 @@
         width: 360px;
     }
 }
-
-
-
-
-
-// .FullPage{
-//     display: flex;
-//     justify-content: center;
-// }
-// .main{
-//     margin-top: 10px;
-//     border: 1px solid gray;
-//     border-radius: 10px;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     width: 60vw;
-//     height: 95vh;
-// }
-// .left{
-//     width: 450px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     padding: 30px;
-// }
-// .MainLogo{
-//     display: flex;
-//     height: 80px;
-//     flex-direction: column;
-//     justify-content: space-between;
-
-// }
-// .FirstLast{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-// .UserName{
-   
-//     width: 100%;
-//     .mat-form-field-appearance-outline{
-//         width: 100%;
-//         display: flex;
-//     }
-// }
-// .PasswordAndConfirm{
-  
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-// .SigninAndNextButton{
-//     border: 1px solid red;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     height: 60px;
-// }
-// .Signin{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-// .right{
-//     width: 300px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     align-items: center;
-//     height: 300px;
-// }
-// .oneacc{
-//     height: 25px;
-//     width: 200px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// }
-// @media screen and (max-width: 60vw){
-//     .right{
-//         display: none;
-//     }
-//     .left{
-//         width: 360px;
-//     }
-// }

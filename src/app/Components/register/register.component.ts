@@ -36,7 +36,7 @@ export class RegisterComponent implements OnInit {
     try {
       this.userService.Register(this.registerForm.value).subscribe((response: any) => {
         if (response.Status)
-          console.log("register successful", response);
+          console.log("Registration Successful", response);
       })
     }
     catch (error) {

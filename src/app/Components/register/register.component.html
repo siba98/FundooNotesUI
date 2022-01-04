@@ -2,26 +2,29 @@
     <form [formGroup]="registerForm" (ngSubmit)="Register()">
         <mat-card class="card">
             <div class="FormFields">
-                <mat-card-title class="mat-card-title"> <span style="color: rgb(81, 120, 226)">F</span><span
-                        style="color: rgb(214, 80, 98)">u</span><span style="color: rgb(231, 228, 39)">n</span><span
-                        style="color: rgb(81, 120, 226)">d</span><span style="color: rgb(7, 219, 53)">o</span><span
-                        style="color: rgb(214, 43, 71)">o</span>
+                <mat-card-title class="mat-card-title">
+                     <span style="color: rgb(32, 84, 226)">F</span>
+                     <span style="color: rgb(211, 28, 52)">u</span>
+                     <span style="color: rgb(207, 205, 50)">n</span>
+                     <span style="color: rgb(33, 82, 216)">d</span>
+                     <span style="color: rgb(34, 224, 75)">o</span>
+                     <span style="color: rgb(221, 38, 69)">o</span>
                 </mat-card-title>
                 <h2>Create your Fundoo Account </h2>
                 <div class="FirstLast">
-                    <mat-form-field class="First" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <mat-label>First name</mat-label>
                         <input matInput formControlName="FirstName">
                         <mat-error>Please enter first name</mat-error>
                     </mat-form-field>
-                    <mat-form-field class="Last" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <mat-label>Last name</mat-label>
                         <input matInput formControlName="LastName">
                         <mat-error>Please enter last name</mat-error>
                     </mat-form-field>
                 </div>
                 <div class="UserName">
-                    <mat-form-field class="email" appearance="outline" matSuffix="@gmail.com">
+                    <mat-form-field appearance="outline" matSuffix="@gmail.com">
                         <mat-label>Email</mat-label>
                         <input matInput formControlName="Email">
                         <mat-error>Please enter valid email</mat-error>
@@ -30,13 +33,13 @@
                     </mat-form-field>
                 </div>
                 <div class="PasswordAndConfirm">
-                    <mat-form-field class="Pswd" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <mat-label>Password</mat-label>
                         <input matInput formControlName="Password" [type]=" show ? 'text':'password'">
                         <mat-error>Please enter a valid password</mat-error>
                         <mat-hint>Use 8 or more characters with a mix of letters, numbers & symbols</mat-hint>
                     </mat-form-field>
-                    <mat-form-field class="ConfirmPaswd" appearance="outline">
+                    <mat-form-field appearance="outline">
                         <mat-label>Confirm</mat-label>
                         <input matInput [type]=" show ? 'text':'password'">
                     </mat-form-field>

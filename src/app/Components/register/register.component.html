@@ -17,30 +17,29 @@
                     <mat-form-field class="Last" appearance="outline">
                         <mat-label>Last name</mat-label>
                         <input matInput formControlName="LastName">
+                        <mat-error>Please enter last name</mat-error>
                     </mat-form-field>
                 </div>
                 <div class="UserName">
                     <mat-form-field class="email" appearance="outline" matSuffix="@gmail.com">
                         <mat-label>Email</mat-label>
                         <input matInput formControlName="Email">
+                        <mat-error>Please enter valid email</mat-error>
+                        <mat-hint>You can use letters, numbers & periods</mat-hint>
                         <!-- <span class="gmail">@gmail.com</span> -->
                     </mat-form-field>
-                </div>
-                <div class="header2">
-                    <h5>You can use letters, numbers & periods</h5>
                 </div>
                 <div class="PasswordAndConfirm">
                     <mat-form-field class="Pswd" appearance="outline">
                         <mat-label>Password</mat-label>
                         <input matInput formControlName="Password" [type]=" show ? 'text':'password'">
+                        <mat-error>Please enter a valid password</mat-error>
+                        <mat-hint>Use 8 or more characters with a mix of letters, numbers & symbols</mat-hint>
                     </mat-form-field>
                     <mat-form-field class="ConfirmPaswd" appearance="outline">
                         <mat-label>Confirm</mat-label>
                         <input matInput [type]=" show ? 'text':'password'">
                     </mat-form-field>
-                </div>
-                <div class="Header3">
-                    <h5>Use 8 or more characters with a mix of letters, numbers & symbols</h5>
                 </div>
                 <section class="checkbox">
                     <mat-checkbox (change)="ShowPassword()">Show Password</mat-checkbox>

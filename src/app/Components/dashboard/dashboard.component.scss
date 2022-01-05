@@ -1,0 +1,54 @@
+.DashboardPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ToolCard{
+    height: 9vh;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+}
+.topleft{
+    display: flex;
+    gap: 10px;
+    height: 8vh;
+    align-items: center;
+}
+.Searchbar{
+    display: flex;
+    border-radius: 7px;
+    height: 8vh;
+    align-items: center;
+    background-color: rgba(243, 242, 242, 0.938);
+    .search{
+        background: none;
+        width: 600px;
+        border: none;
+        outline: none;
+    }
+}
+.sidesearchicons{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    gap: 5px;
+}
+.LastTopRights{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    gap: 3px;
+}
+.Sidebar{
+    height: 489px;
+    width: 230px;
+    padding: 10px;
+}
+.sidebarevents{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    
+}

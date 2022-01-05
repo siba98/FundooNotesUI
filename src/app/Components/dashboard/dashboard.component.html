@@ -1,1 +1,86 @@
-<p>dashboard works!</p>
+<div class="DashboardPage">
+    <mat-card class="ToolCard">
+        <div class="topbar">
+            <div class="topleft">
+                <button mat-icon-button matTooltip="Menu">
+                    <mat-icon mat-list-icon class="material-icons-outlined">menu</mat-icon>
+                </button>
+                <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="Fundoo Icon">
+                <div class="AppName">Fundoo</div>
+            </div>
+            <div class="Searchbar">
+                <button mat-icon-button matTooltip="Search">
+                    <mat-icon mat-list-icon class="material-icons-outlined" matPrefix>search</mat-icon>
+                </button>
+                <div class="searchinput">
+                    <input class="search" placeholder="Search">
+                </div>
+                <button mat-icon-button matTooltip="ClearSearch">
+                    <mat-icon mat-list-icon class="material-icons-outlined" matSuffix>clear</mat-icon>
+                </button>
+            </div>
+            <div class="sidesearchicons">
+                <button mat-icon-button matTooltip="Refresh">
+                    <mat-icon mat-list-icon class="material-icons-outlined">refresh</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="View">
+                    <mat-icon mat-list-icon class="material-icons-outlined">view_agenda</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Settings">
+                    <mat-icon mat-list-icon class="material-icons-outlined">settings</mat-icon>
+                </button>
+            </div>
+            <div class="LastTopRights">
+                <button mat-icon-button matTooltip="apps">
+                    <mat-icon mat-list-icon class="material-icons-outlined">apps</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Account">
+                    <mat-icon mat-list-icon class="material-icons-outlined">account_circle</mat-icon>
+                </button>
+            </div>
+        </div>
+    </mat-card>
+    <div class="Sidebar">
+        <div class="sidebarevents">
+            <button mat-icon-button matTooltip="Notes">
+                <mat-icon mat-list-icon class="material-icons-outlined">lightbulb</mat-icon>
+            </button>
+            <div>
+                <h4>Notes</h4>
+            </div>
+
+        </div>
+        <div class="sidebarevents">
+            <button mat-icon-button matTooltip="Reminder">
+                <mat-icon mat-list-icon class="material-icons-outlined">notifications</mat-icon>
+            </button>
+            <div>
+                <h4>Reminders</h4>
+            </div>
+        </div>
+        <div class="sidebarevents">
+            <button mat-icon-button matTooltip="Edit">
+                <mat-icon mat-list-icon class="material-icons-outlined">mode_edit_outline</mat-icon>
+            </button>
+            <div>
+                <h4>Edit labels</h4>
+            </div>
+        </div>
+        <div class="sidebarevents">
+            <button mat-icon-button matTooltip="Archive">
+                <mat-icon mat-list-icon class="material-icons-outlined">archive</mat-icon>
+            </button>
+            <div>
+                <h4>Archive</h4>
+            </div>
+        </div>
+        <div class="sidebarevents">
+            <button mat-icon-button matTooltip="Trash">
+                <mat-icon mat-list-icon class="material-icons-outlined">delete_outline</mat-icon>
+            </button>
+            <div>
+                <h3>Trash</h3>
+            </div>
+        </div>
+    </div>
+</div>

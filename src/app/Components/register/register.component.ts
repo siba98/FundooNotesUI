@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { FormGroup } from '@angular/forms';
-// import { FormBuilder, Validators } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserServiceService } from 'src/app/Services/UserService/user-service.service';
 
@@ -20,7 +18,6 @@ export class RegisterComponent implements OnInit {
       LastName: ['', Validators.required],
       Email: ['', [Validators.required, Validators.email]],
       Password: ['', [Validators.required, Validators.minLength(6)]],
-    }, {
     });
   }
 
@@ -35,13 +32,12 @@ export class RegisterComponent implements OnInit {
   Register() {
     try {
       this.userService.Register(this.registerForm.value).subscribe((response: any) => {
-        if (response.Status)
+        if (response.status)
           console.log("Registration Successful", response);
       })
     }
     catch (error) {
       console.log(error);
     };
-
   }
 }

@@ -14,10 +14,10 @@ export class UserServiceService {
 
   Register(data: any) {
     let param = {
-      FirstName: data.firstname,
-      LastName: data.lastname,
-      Email: data.email,
-      Password: data.password,
+      FirstName: data.FirstName,
+      LastName: data.LastName,
+      Email: data.Email,
+      Password: data.Password,
     }
     return this.httpservice.post(`${this.baseUrl}/api/User/register`, param);
   }

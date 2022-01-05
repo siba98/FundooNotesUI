@@ -4,27 +4,35 @@
     justify-content: space-between;
 }
 .ToolCard{
-    height: 9vh;
+    height: 40px;
 }
 .topbar{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .topleft{
     display: flex;
     gap: 10px;
-    height: 8vh;
+    height: 45px;
     align-items: center;
+}
+.AppName{
+    font-size: large;
 }
 .Searchbar{
     display: flex;
+    justify-content: space-around;
     border-radius: 7px;
-    height: 8vh;
+    height: 48px;
+    width: 600px;
     align-items: center;
     background-color: rgba(243, 242, 242, 0.938);
     .search{
-        background: none;
-        width: 600px;
+        font-size: large;
+        height: 30px;
+        background: transparent;
+        width: 560px;
         border: none;
         outline: none;
     }
@@ -32,13 +40,13 @@
 .sidesearchicons{
     display: flex;
     align-items: center;
-    height: 8vh;
+    height: 45px;
     gap: 5px;
 }
 .LastTopRights{
     display: flex;
     align-items: center;
-    height: 8vh;
+    height: 45px;
     gap: 3px;
 }
 .Sidebar{
@@ -48,7 +56,5 @@
 }
 .sidebarevents{
     display: flex;
-    align-items: center;
     gap: 23px;
-    
 }

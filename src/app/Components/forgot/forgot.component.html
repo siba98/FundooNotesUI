@@ -1,27 +1,29 @@
 <div class="FullPage">
-    <mat-card class="card">
-        <mat-card-title class="mat-card-title"> <span style="color: rgb(81, 120, 226)">F</span><span
-                style="color: rgb(214, 80, 98)">u</span><span style="color: rgb(231, 228, 39)">n</span><span
-                style="color: rgb(81, 120, 226)">d</span><span style="color: rgb(7, 219, 53)">o</span><span
-                style="color: rgb(214, 43, 71)">o</span>
-        </mat-card-title>
-        <div class="FirstHeader">
-            <h1>Recover Account </h1>
-        </div>
-        <div class="SecondHeader">
-            <h3>Enter your Registered Fundoo Email</h3>
-        </div>
-        <div class="EmailField">
-            <mat-form-field appearance="outline">
-                <mat-label>Email</mat-label>
-                <input matInput>
-            </mat-form-field>
-        </div>
-        <div class="NextButton">
-            <div>
-                <button mat-button style="color: dodgerblue;">Create account</button>
+    <form [formGroup]="forgotForm" (ngSubmit)="Forgot()">
+        <mat-card class="card">
+            <mat-card-title class="mat-card-title"> <span style="color: rgb(81, 120, 226)">F</span><span
+                    style="color: rgb(214, 80, 98)">u</span><span style="color: rgb(231, 228, 39)">n</span><span
+                    style="color: rgb(81, 120, 226)">d</span><span style="color: rgb(7, 219, 53)">o</span><span
+                    style="color: rgb(214, 43, 71)">o</span>
+            </mat-card-title>
+            <div class="FirstHeader">
+                <h1>Recover Account </h1>
             </div>
-            <button mat-raised-button color="primary">Next</button>
-        </div>
-    </mat-card>
+            <div class="SecondHeader">
+                <h3>Enter your Registered Fundoo Email</h3>
+            </div>
+            <div class="EmailField">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="Email">
+                </mat-form-field>
+            </div>
+            <div class="NextButton">
+                <div>
+                    <button mat-button style="color: dodgerblue;">Create account</button>
+                </div>
+                <button mat-raised-button color="primary">Next</button>
+            </div>
+        </mat-card>
+    </form>
 </div>

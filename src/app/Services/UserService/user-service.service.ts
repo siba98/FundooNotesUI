@@ -28,4 +28,12 @@ export class UserServiceService {
     }
     return this.httpservice.post(`${this.baseUrl}/api/User/login`, param);
   }
+
+  Reset(data: any) {
+    let param = {
+      Email: data.Email,
+      Password: data.Password,
+    }
+    return this.httpservice.put(`${this.baseUrl}/api/User/resetPassword`, param);
+  }
 }

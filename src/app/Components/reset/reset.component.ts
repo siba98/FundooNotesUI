@@ -15,8 +15,16 @@ export class ResetComponent implements OnInit {
   ngOnInit(): void {
     this.resetForm = this.formBuilder.group({
       Email: ['', [Validators.required, Validators.email]],
-      Password: ['', [Validators.required, Validators.minLength(6)]],
+      NewPassword: ['', [Validators.required, Validators.minLength(6)]],
     });
+  }
+
+  ShowPassword() {
+    if (this.show) {
+      this.show = false;
+    } else {
+      this.show = true;
+    }
   }
 
   Reset() {

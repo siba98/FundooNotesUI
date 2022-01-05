@@ -15,20 +15,21 @@
             </div>
             <div class="PasswordField">
                 <mat-form-field appearance="outline">
-                    <mat-label>Password</mat-label>
+                    <mat-label>New password</mat-label>
+                    <input matInput formControlName="NewPassword" [type]=" show ? 'text':'password'">
                     <mat-error>Please enter a valid password</mat-error>
                     <mat-hint>Use 8 or more characters with a mix of letters, numbers & symbols</mat-hint>
-                    <input matInput formControlName="Password">
                 </mat-form-field>
             </div>
             <div class="ConfirmPasswordField">
                 <mat-form-field appearance="outline">
                     <mat-label>Confirm password</mat-label>
+                    <input matInput [type]=" show ? 'text':'password'">
                 </mat-form-field>
             </div>
             <div class="PswdandReset">
                 <section>
-                    <mat-checkbox>Show Password</mat-checkbox>
+                    <mat-checkbox (change)="ShowPassword()">Show Password</mat-checkbox>
                 </section>
                 <div>
                     <button mat-raised-button color="primary">Reset</button>

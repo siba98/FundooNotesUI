@@ -32,7 +32,7 @@ export class UserServiceService {
   Reset(data: any) {
     let param = {
       Email: data.Email,
-      Password: data.Password,
+      NewPassword: data.NewPassword,
     }
     return this.httpservice.put(`${this.baseUrl}/api/User/resetPassword`, param);
   }

@@ -9,7 +9,6 @@ export class UserServiceService {
 
   constructor(private httpservice: HttpServiceService) { }
 
-
   baseUrl = environment.baseUrl;
 
   Register(data: any) {
@@ -20,5 +19,13 @@ export class UserServiceService {
       Password: data.Password,
     }
     return this.httpservice.post(`${this.baseUrl}/api/User/register`, param);
+  }
+
+  Login(data: any) {
+    let param = {
+      Email: data.Email,
+      Password: data.Password,
+    }
+    return this.httpservice.post(`${this.baseUrl}/api/User/login`, param);
   }
 }

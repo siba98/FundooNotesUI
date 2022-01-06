@@ -11,6 +11,7 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:"register", component:RegisterComponent},
+  {path:"", component:LoginComponent},
   {path:"login", component:LoginComponent},
   {path:"forgot", component:ForgotComponent},
   {path:"reset", component:ResetComponent},

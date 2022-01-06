@@ -39,8 +39,7 @@ export class UserServiceService {
 
   Forgot(data: any) {
     let param = {
-      Email: data.Email,
     }
-    return this.httpservice.post(`${this.baseUrl}/api/User/forgotPassword`, param);
+    return this.httpservice.post(`${this.baseUrl}/api/User/forgotPassword?Email=${data.Email}`);
   }
 }

@@ -19,7 +19,7 @@ import { CreateNotesComponent } from './Components/create-notes/create-notes.com
 import { IconsComponent } from './Components/icons/icons.component';
 import { NotesComponent } from './Components/notes/notes.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +43,8 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
     MatCheckboxModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

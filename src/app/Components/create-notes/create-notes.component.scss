@@ -6,7 +6,7 @@
 }
 .cards{
     width: 590px;
-    height: 3vh;
+    height: 20px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
 }
 .card{
     width: 590px;
-    height: 10vh;
+    height: 130px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -37,12 +37,22 @@
 }
 .TitleAndNote{
     justify-content: space-between;
-    // height:30px;
     display: flex;
-    // width: 100%;
 }
 .InputFields{
     border:none;
     outline:none;
     font-size: medium;
+}
+.NoteIcons{
+    border:none;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    .CloseButton{
+        .mat-raised-button{
+            border:none;
+            outline: none;
+        }
+    }
 }

@@ -26,8 +26,9 @@ export class LoginComponent implements OnInit {
     try {
       this.userService.Login(this.loginForm.value).subscribe((response: any) => {
         if (response.status)
-        // console.log("login success", response);
-        localStorage.setItem("token",response.Token)
+        console.log("login success", response);
+        localStorage.setItem("token",response.token)
+        localStorage.setItem("userId",response.data.userId)
         this.router.navigate(['/dashboard'])
         this.snackBar.open(response.message,'',{duration :4000})
       })

@@ -16,6 +16,6 @@ header = {
 }
 
   getNotes(){
-    return this.httpservice.get(`${this.baseUrl}/api/getNotes?UserId=${localStorage.getItem("UserId")}`,true, this.header);
+    return this.httpservice.get(`${this.baseUrl}/api/getNotes?UserId=${localStorage.getItem("userId")}`,true, this.header);
   }
 }

@@ -3,7 +3,7 @@
         <div class="takenote">
             <input (click)="openbar()" class="Inputfield"  placeholder="Take a note...">
         </div>
-        <button mat-icon-button matTooltip="New note with image">
+        <button mat-icon-button matTooltip="New note with image" matTooltipPosition="below">
             <img src="../../../assets/outline_image_black_24dp.png">
         </button>
     </mat-card>
@@ -22,24 +22,7 @@
         </div>
         <div class="TitleAndNote">
             <div class="NoteIcons">
-                <!-- <button mat-icon-button matTooltip="Reminde me">
-                    <img src="../../../assets/outline_add_alert_black_24dp.png">
-                </button>
-                <button mat-icon-button matTooltip="Collaborator">
-                    <img src="../../../assets/outline_person_add_alt_1_black_24dp.png">
-                </button>
-                <button mat-icon-button matTooltip="Background options">
-                    <img src="../../../assets/outline_color_lens_black_24dp.png">
-                </button>
-                <button mat-icon-button matTooltip="Add image">
-                    <img src="../../../assets/outline_image_black_24dp.png">
-                </button>
-                <button mat-icon-button matTooltip="Archive">
-                    <img src="../../../assets/outline_archive_black_24dp.png">
-                </button>
-                <button mat-icon-button matTooltip="More">
-                    <mat-icon mat-list-icon class="material-icons-outlined">more_vert</mat-icon>
-                </button> -->
+                <app-icons></app-icons>
             </div>
                 <button mat-button>Close</button>
         </div>

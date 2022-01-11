@@ -23,6 +23,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { SidenavComponent } from './Components/sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     IconsComponent,
     NotesComponent,
     DashboardComponent,
-    SidenavComponent
+    SidenavComponent,
+    GetAllNotesComponent
   ],
   imports: [
     BrowserModule,

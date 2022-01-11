@@ -8,6 +8,7 @@ import { CreateNotesComponent } from './Components/create-notes/create-notes.com
 import { IconsComponent } from './Components/icons/icons.component';
 import { NotesComponent } from './Components/notes/notes.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { SidenavComponent } from './Components/sidenav/sidenav.component';
 
 const routes: Routes = [
   {path:"register", component:RegisterComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:"create-notes", component:CreateNotesComponent},
   {path:"icons", component:IconsComponent},
   {path:"notes", component:NotesComponent},
-  {path:"dashboard", component:DashboardComponent}
+  {path:"dashboard", component:DashboardComponent},
+  {path:"sidenav", component:SidenavComponent}
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NoteServiceService } from 'src/app/Services/NoteService/note-service.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
-
+  notes:any=[];
+  constructor(private noteService: NoteServiceService) { }
   ngOnInit(): void {
   }
-
+  // getNotes(){
+  //   return this.noteService.getNotes(localStorage.getItem("UserId")).subscribe((response:any)=>{
+  //     this.notes=response.data;
+  //   })
+  // }
 }

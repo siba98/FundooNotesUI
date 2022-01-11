@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-notes.component.scss']
 })
 export class CreateNotesComponent implements OnInit {
+  displayBar=true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  openbar(){this.displayBar=false};
 }

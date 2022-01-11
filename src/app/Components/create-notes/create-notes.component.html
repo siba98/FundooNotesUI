@@ -1,20 +1,20 @@
-<div class="full">
+<div *ngIf="displayBar" class="full">
     <mat-card class="cards">
         <div class="takenote">
-            <input class="Inputfield"  placeholder="Take a note...">
+            <input (click)="openbar()" class="Inputfield"  placeholder="Take a note...">
         </div>
-        <button mat-icon-button matTooltip="Image">
-            <mat-icon mat-list-icon class="material-icons-outlined">image</mat-icon>
+        <button mat-icon-button matTooltip="New note with image">
+            <img src="../../../assets/outline_image_black_24dp.png">
         </button>
     </mat-card>
 </div>
 
-<div class="fullpage">
+<div *ngIf="!displayBar" class="fullpage">
     <mat-card class="card">
         <div class="TitleAndNote">
             <input class="InputFields" placeholder="Title">
-            <button mat-icon-button matTooltip="Pin">
-                <mat-icon mat-list-icon class="material-icons-outlined">push_pin</mat-icon>
+            <button mat-icon-button matTooltip="Pin note">
+                <img src="../../../assets/outline_push_pin_black_24dp.png">
             </button>
         </div>
         <div class="TitleAndNote">
@@ -22,28 +22,26 @@
         </div>
         <div class="TitleAndNote">
             <div class="NoteIcons">
-                <button mat-icon-button matTooltip="Reminder">
-                    <mat-icon mat-list-icon class="material-icons-outlined">add_alert</mat-icon>
+                <!-- <button mat-icon-button matTooltip="Reminde me">
+                    <img src="../../../assets/outline_add_alert_black_24dp.png">
                 </button>
                 <button mat-icon-button matTooltip="Collaborator">
-                    <mat-icon mat-list-icon class="material-icons-outlined">person_add</mat-icon>
+                    <img src="../../../assets/outline_person_add_alt_1_black_24dp.png">
                 </button>
-                <button mat-icon-button matTooltip="Colour">
-                    <mat-icon mat-list-icon class="material-icons-outlined">color_lens</mat-icon>
+                <button mat-icon-button matTooltip="Background options">
+                    <img src="../../../assets/outline_color_lens_black_24dp.png">
                 </button>
-                <button mat-icon-button matTooltip="Image">
-                    <mat-icon mat-list-icon class="material-icons-outlined">image</mat-icon>
+                <button mat-icon-button matTooltip="Add image">
+                    <img src="../../../assets/outline_image_black_24dp.png">
                 </button>
                 <button mat-icon-button matTooltip="Archive">
-                    <mat-icon mat-list-icon class="material-icons-outlined">archive</mat-icon>
+                    <img src="../../../assets/outline_archive_black_24dp.png">
                 </button>
-                <button mat-icon-button matTooltip="Options">
+                <button mat-icon-button matTooltip="More">
                     <mat-icon mat-list-icon class="material-icons-outlined">more_vert</mat-icon>
-                </button>
+                </button> -->
             </div>
-            <div class="CloseButton">
-                <button mat-raised-button>Close</button>
-            </div>
+                <button mat-button>Close</button>
         </div>
     </mat-card>
 </div>

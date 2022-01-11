@@ -2,7 +2,7 @@
     <mat-card class="ToolCard">
         <div class="topbar">
             <div class="topleft">
-                <button mat-icon-button matTooltip="Menu">
+                <button mat-icon-button matTooltip="Main menu">
                     <mat-icon mat-list-icon class="material-icons-outlined">menu</mat-icon>
                 </button>
                 <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="Fundoo Icon">
@@ -10,24 +10,24 @@
             </div>
             <div class="Searchbar">
                 <button mat-icon-button matTooltip="Search">
-                    <mat-icon mat-list-icon class="material-icons-outlined" matPrefix>search</mat-icon>
+                    <mat-icon matPrefix>search</mat-icon>
                 </button>
                 <div class="searchinput">
                     <input class="search" type="search" placeholder="Search">
                 </div>
-                <!-- <button mat-icon-button matTooltip="ClearSearch">
+                <button mat-icon-button matTooltip="Clear search">
                     <mat-icon mat-list-icon class="material-icons-outlined" matSuffix>clear</mat-icon>
-                </button> -->
+                </button>
             </div>
             <div class="sidesearchicons">
                 <button mat-icon-button matTooltip="Refresh">
-                    <mat-icon mat-list-icon class="material-icons-outlined">refresh</mat-icon>
+                    <mat-icon>refresh</mat-icon>
                 </button>
                 <button mat-icon-button matTooltip="View">
-                    <mat-icon mat-list-icon class="material-icons-outlined">view_agenda</mat-icon>
+                    <img src="../../../assets/outline_view_agenda_black_24dp.png">
                 </button>
                 <button mat-icon-button matTooltip="Settings">
-                    <mat-icon mat-list-icon class="material-icons-outlined">settings</mat-icon>
+                    <img src="../../../assets/outline_settings_black_24dp.png">
                 </button>
             </div>
             <div class="LastTopRights">
@@ -35,41 +35,15 @@
                     <mat-icon mat-list-icon class="material-icons-outlined">apps</mat-icon>
                 </button>
                 <button mat-icon-button matTooltip="Account">
-                    <mat-icon mat-list-icon class="material-icons-outlined">account_circle</mat-icon>
+                    <img src="../../../assets/outline_account_circle_black_24dp.png">
                 </button>
             </div>
         </div>
     </mat-card>
-    <div class="Sidebar">
-        <div class="sidebarevents">
-            <button mat-icon-button matTooltip="Notes">
-                <mat-icon mat-list-icon class="material-icons-outlined">lightbulb</mat-icon>
-            </button>
-                <div class="Titles">Notes</div>
+    <div class="container">
+        <div class="Sidebar">
+            <app-sidenav></app-sidenav>
         </div>
-        <div class="sidebarevents">
-            <button mat-icon-button matTooltip="Reminder">
-                <mat-icon mat-list-icon class="material-icons-outlined">notifications</mat-icon>
-            </button>
-            <div class="Titles">Reminders</div>
-        </div>
-        <div class="sidebarevents">
-            <button mat-icon-button matTooltip="Edit">
-                <mat-icon mat-list-icon class="material-icons-outlined">mode_edit_outline</mat-icon>
-            </button>
-            <div class="Titles">Edit labels</div>
-        </div>
-        <div class="sidebarevents">
-            <button mat-icon-button matTooltip="Archive">
-                <mat-icon mat-list-icon class="material-icons-outlined">archive</mat-icon>
-            </button>
-            <div class="Titles">Archive</div>
-        </div>
-        <div class="sidebarevents">
-            <button mat-icon-button matTooltip="Trash">
-                <mat-icon mat-list-icon class="material-icons-outlined">delete_outline</mat-icon>
-            </button>
-            <div class="Titles">Trash</div>
-        </div>
+        <div class="component"><app-create-notes></app-create-notes></div>
     </div>
 </div>

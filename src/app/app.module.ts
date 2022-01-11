@@ -20,6 +20,9 @@ import { IconsComponent } from './Components/icons/icons.component';
 import { NotesComponent } from './Components/notes/notes.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { SidenavComponent } from './Components/sidenav/sidenav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTooltipModule} from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     CreateNotesComponent,
     IconsComponent,
     NotesComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ReactiveFormsModule,
     HttpClientModule,
     MatIconModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSidenavModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

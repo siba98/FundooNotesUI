@@ -25,9 +25,9 @@
     justify-content: space-around;
     border-radius: 7px;
     height: 48px;
-    width: 650px;
+    width: 670px;
     align-items: center;
-    background-color: rgba(243, 242, 242, 0.938);
+    background-color: rgba(240, 240, 243, 0.945);
     .search{
         font-size: large;
         height: 30px;
@@ -51,8 +51,15 @@
 }
 .Sidebar{
     height: 489px;
-    width: 230px;
+    width: 15%;
     padding: 10px;
+}
+.container{
+display: flex;
+}
+.component{
+    height: auto;
+    width: 80%;
 }
 .sidebarevents{
     display: flex;

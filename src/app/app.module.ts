@@ -17,7 +17,6 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { CreateNotesComponent } from './Components/create-notes/create-notes.component';
 import { IconsComponent } from './Components/icons/icons.component';
-import { NotesComponent } from './Components/notes/notes.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { SidenavComponent } from './Components/sidenav/sidenav.component';
@@ -25,6 +24,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
 import { DisplayNoteCardsComponent } from './Components/display-note-cards/display-note-cards.component';
+import { AuthguardServiceService } from './Services/AuthguardService/authguard-service.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,6 @@ import { DisplayNoteCardsComponent } from './Components/display-note-cards/displ
     ResetComponent,
     CreateNotesComponent,
     IconsComponent,
-    NotesComponent,
     DashboardComponent,
     SidenavComponent,
     GetAllNotesComponent,
@@ -56,7 +56,7 @@ import { DisplayNoteCardsComponent } from './Components/display-note-cards/displ
     MatSidenavModule,
     MatTooltipModule
   ],
-  providers: [],
+  providers: [AuthguardServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

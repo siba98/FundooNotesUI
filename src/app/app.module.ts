@@ -25,7 +25,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
 import { DisplayNoteCardsComponent } from './Components/display-note-cards/display-note-cards.component';
 import { AuthguardServiceService } from './Services/AuthguardService/authguard-service.service';
-
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +54,8 @@ import { AuthguardServiceService } from './Services/AuthguardService/authguard-s
     MatIconModule,
     MatSnackBarModule,
     MatSidenavModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatListModule
   ],
   providers: [AuthguardServiceService],
   bootstrap: [AppComponent]

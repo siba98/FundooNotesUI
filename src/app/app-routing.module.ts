@@ -17,10 +17,11 @@ const routes: Routes = [
   {path:"", component:LoginComponent},
   {path:"login", component:LoginComponent},
   {path:"forgot", component:ForgotComponent},
-  {path:"reset", component:ResetComponent,canActivate:[AuthenticationGuard]},
+  {path:"reset", component:ResetComponent},
   {path:"create-notes", component:CreateNotesComponent},
   {path:"icons", component:IconsComponent},
-  {path:"dashboard", component:DashboardComponent,canActivate:[AuthenticationGuard],
+  {path:"dashboard", component:DashboardComponent,
+  // canActivate:[AuthenticationGuard],
   children:[
     {path:'',redirectTo:"create-notes", pathMatch:'full'},
     {path:"create-notes", component:CreateNotesComponent},

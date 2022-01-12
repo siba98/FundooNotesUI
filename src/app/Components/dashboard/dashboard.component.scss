@@ -50,20 +50,14 @@
     gap: 3px;
 }
 .Sidebar{
-    height : 400px !important;
-    width: 15%;
     padding: 10px;
 }
 .container{
-display: flex;
-}
-.component{
-    height: auto;
-    width: 80%;
+    width: 19vw;
+    display: flex;
 }
 .sidebarevents{
     display: flex;
-    gap: 23px;
 }
 .Titles{
 display: flex;
@@ -72,9 +66,11 @@ justify-content: center;
 align-items: center;
 }
 .notesfield{
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.example-sidenav-container{
+    height: 70vh;
 }

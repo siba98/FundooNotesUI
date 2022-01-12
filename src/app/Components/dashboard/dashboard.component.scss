@@ -71,3 +71,10 @@ font-size: medium;
 justify-content: center;
 align-items: center;
 }
+.notesfield{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

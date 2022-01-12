@@ -1,0 +1,17 @@
+<div class="totalpage" *ngFor='let note of NotesList'>
+    <mat-card class="notecard">
+        <div>{{note.title}}</div>
+            <!-- (click)="openDialog(note)" -->
+        <div>{{note.description}}</div>
+            <!-- (click)="openDialog(note)" -->
+        <!-- <div class="notes">
+            <input class="makenotes" placeholder="Title">
+        </div>
+        <div class="notes">
+            <input class="makenotes" placeholder="Note">
+        </div> -->
+        <div class="noteicons">
+            <app-icons></app-icons>
+        </div>
+    </mat-card>
+</div>

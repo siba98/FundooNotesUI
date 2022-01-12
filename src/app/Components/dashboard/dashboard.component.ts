@@ -10,10 +10,14 @@ export class DashboardComponent implements OnInit {
   notes:any=[];
   constructor(private noteService: NoteServiceService) { }
   ngOnInit(): void {
+    this.getNotes();
   }
-  // getNotes(){
-  //   return this.noteService.getNotes(localStorage.getItem("UserId")).subscribe((response:any)=>{
-  //     this.notes=response.data;
-  //   })
-  // }
+
+  getNotes(){
+    return this.noteService.getNotes().subscribe((response: any) => {
+      this.notes=response.data;
+      console.log(this.notes)
+    })
+  }
+  
 }

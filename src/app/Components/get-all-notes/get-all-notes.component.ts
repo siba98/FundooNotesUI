@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NoteServiceService } from '../../Services/NoteService/note-service.service';
 
 @Component({
   selector: 'app-get-all-notes',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetAllNotesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private noteService: NoteServiceService) { }
 
   ngOnInit(): void {
   }

@@ -12,5 +12,13 @@ export class CreateNotesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openbar(){this.displayBar=false};
+  openbar(){
+    if(this.displayBar==true)
+    {
+      this.displayBar=false;
+    }
+    else{
+      this.displayBar=true;
+    }
+  };
 }

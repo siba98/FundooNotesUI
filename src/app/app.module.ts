@@ -24,6 +24,7 @@ import { SidenavComponent } from './Components/sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
+import { DisplayNoteCardsComponent } from './Components/display-note-cards/display-note-cards.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.c
     NotesComponent,
     DashboardComponent,
     SidenavComponent,
-    GetAllNotesComponent
+    GetAllNotesComponent,
+    DisplayNoteCardsComponent
   ],
   imports: [
     BrowserModule,

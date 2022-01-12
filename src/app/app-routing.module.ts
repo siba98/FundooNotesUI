@@ -10,6 +10,7 @@ import { NotesComponent } from './Components/notes/notes.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { SidenavComponent } from './Components/sidenav/sidenav.component';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
+import { DisplayNoteCardsComponent } from './Components/display-note-cards/display-note-cards.component';
 
 const routes: Routes = [
   {path:"register", component:RegisterComponent},
@@ -20,9 +21,15 @@ const routes: Routes = [
   {path:"create-notes", component:CreateNotesComponent},
   {path:"icons", component:IconsComponent},
   {path:"notes", component:NotesComponent},
-  {path:"dashboard", component:DashboardComponent},
+  {path:"dashboard", component:DashboardComponent,
+  children:[
+    {path:'',redirectTo:"create-notes", pathMatch:'full'},
+    {path:"create-notes", component:CreateNotesComponent},
+  ]
+},
   {path:"sidenav", component:SidenavComponent},
-  {path:"get-all-notes", component:GetAllNotesComponent}
+  {path:"get-all-notes", component:GetAllNotesComponent},
+  {path:"display-note-cards", component:DisplayNoteCardsComponent},
 ];
 
 @NgModule({

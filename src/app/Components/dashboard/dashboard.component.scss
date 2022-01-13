@@ -72,5 +72,22 @@ align-items: center;
     justify-content: center;
 }
 .example-sidenav-container{
-    height: 70vh;
+    height: auto;
+}
+.notescontent{
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.upperone{
+    align-items: center;
+    height: max-content;
+}
+.lowerone{
+    display: flex;
+padding: 30px;
+justify-content: space-around;
+align-items: center;
+    height: max-content;
 }

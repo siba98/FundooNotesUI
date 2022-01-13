@@ -7,17 +7,20 @@ import { NoteServiceService } from '../../Services/NoteService/note-service.serv
   styleUrls: ['./get-all-notes.component.scss']
 })
 export class GetAllNotesComponent implements OnInit {
-NotesList: any
+  GetAllNotesList: any
   constructor(private noteService: NoteServiceService) { }
-userId = localStorage.getItem('userId');
+  userId = localStorage.getItem('userId');
   ngOnInit(): void {
     this.GetNotes();
   }
 
   GetNotes(){
-    this.noteService.GetNotes().subscribe((result:any)=>{
-      this.NotesList = result.data;
-      console.log(this.NotesList)
+    this.noteService.NotesList().subscribe((result:any)=>{
+      this.GetAllNotesList = result.data;
+      console.log(this.GetAllNotesList)
+    },
+    error => {
+      console.log("error",error);
     })
   }
 

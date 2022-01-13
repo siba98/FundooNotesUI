@@ -1,7 +1,7 @@
 <div *ngIf="displayBar" class="full">
     <mat-card class="cards">
         <div class="takenote">
-            <input (click)="openbar()" class="Inputfield"  placeholder="Take a note...">
+            <input (click)="openbar()" class="Inputfield" placeholder="Take a note...">
         </div>
         <button mat-icon-button matTooltip="New note with image" matTooltipPosition="below">
             <img src="../../../assets/outline_image_black_24dp.png">
@@ -10,21 +10,23 @@
 </div>
 
 <div *ngIf="!displayBar" class="fullpage">
-    <mat-card class="card">
-        <div class="TitleAndNote">
-            <input class="InputFields" placeholder="Title">
-            <button mat-icon-button matTooltip="Pin note">
-                <img src="../../../assets/outline_push_pin_black_24dp.png">
-            </button>
-        </div>
-        <div class="TitleAndNote">
-            <input class="InputFields" placeholder="Take a note...">
-        </div>
-        <div class="TitleAndNote">
-            <div class="NoteIcons">
-                <app-icons></app-icons>
+    <form [formGroup]="addNoteForm">
+        <mat-card class="card">
+            <div class="TitleAndNote">
+                <input class="InputFields" formControlName= "title" placeholder="Title">
+                <button mat-icon-button matTooltip="Pin note">
+                    <img src="../../../assets/outline_push_pin_black_24dp.png">
+                </button>
             </div>
-                <button mat-button (click)="openbar()">Close</button>
-        </div>
-    </mat-card>
+            <div class="TitleAndNote">
+                <input class="InputFields" formControlName= "description" placeholder="Take a note...">
+            </div>
+            <div class="TitleAndNote">
+                <div class="NoteIcons">
+                    <app-icons></app-icons>
+                </div>
+                <button (click)="onSubmit()" mat-button>Close</button>
+            </div>
+        </mat-card>
+    </form>
 </div>

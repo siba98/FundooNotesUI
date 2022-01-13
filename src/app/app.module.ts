@@ -26,6 +26,7 @@ import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.c
 import { DisplayNoteCardsComponent } from './Components/display-note-cards/display-note-cards.component';
 import { AuthguardServiceService } from './Services/AuthguardService/authguard-service.service';
 import {MatListModule} from '@angular/material/list';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,8 @@ import {MatListModule} from '@angular/material/list';
     MatSnackBarModule,
     MatSidenavModule,
     MatTooltipModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule
   ],
   providers: [AuthguardServiceService],
   bootstrap: [AppComponent]

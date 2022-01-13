@@ -1,0 +1,18 @@
+.totalpage{
+    display: flex;
+    padding: 10px;
+}
+.notecard{
+    width: 230px;
+    height: 20vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border : 1px solid rgb(253, 253, 253);
+}
+.whole{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}

@@ -1,11 +1,13 @@
-<div class="totalpage" *ngFor='let note of NotesList'>
-    <mat-card class="notecard">
-        <div>{{note.title}}</div>
-            (click)="openDialog(note)"
-        <div>{{note.description}}</div>
-            (click)="openDialog(note)"
-        <div class="noteicons">
-            <app-icons></app-icons>
-        </div>
-    </mat-card>
+<div class="whole">
+    <div class="totalpage" *ngFor='let note of NotesList'>
+        <mat-card class="notecard">
+            <div>{{note.title}}</div>
+            <!-- (click)="showDialogBox(note)" -->
+            <div>{{note.description}}</div>
+            <!-- (click)="showDialogBox(note)" -->
+            <div class="noteicons">
+                <app-icons></app-icons>
+            </div>
+        </mat-card>
+    </div>
 </div>

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,8 @@ import { DisplayNoteCardsComponent } from './Components/display-note-cards/displ
 import { AuthguardServiceService } from './Services/AuthguardService/authguard-service.service';
 import {MatListModule} from '@angular/material/list';
 import {MatDialogModule} from '@angular/material/dialog';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { UpdateNoteComponent } from './Components/update-note/update-note.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +42,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     DashboardComponent,
     SidenavComponent,
     GetAllNotesComponent,
-    DisplayNoteCardsComponent
+    DisplayNoteCardsComponent,
+    UpdateNoteComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSidenavModule,
     MatTooltipModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    FlexLayoutModule
   ],
   providers: [AuthguardServiceService],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataServiceService } from 'src/app/Services/DataService/data-service.service';
 import { NoteServiceService } from '../../Services/NoteService/note-service.service';
 
 @Component({
@@ -8,20 +9,25 @@ import { NoteServiceService } from '../../Services/NoteService/note-service.serv
 })
 export class GetAllNotesComponent implements OnInit {
   GetAllNotesList: any
-  constructor(private noteService: NoteServiceService) { }
-  userId = localStorage.getItem('userId');
+  constructor(private noteService: NoteServiceService, private dataService: DataServiceService) { }
+
   ngOnInit(): void {
+    this.GetNotes();
+  }
+
+  EventMessageRecieve(message:any){
+    console.log(message);
     this.GetNotes();
   }
 
   GetNotes(){
     this.noteService.NotesList().subscribe((result:any)=>{
       this.GetAllNotesList = result.data;
-      console.log(this.GetAllNotesList)
+      this.GetAllNotesList.reverse();
+      console.log(this.GetAllNotesList);
     },
     error => {
       console.log("error",error);
     })
   }
-
 }

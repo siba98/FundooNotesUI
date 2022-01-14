@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { CreateNotesComponent } from '../create-notes/create-notes.component';
+import {MatDialog} from '@angular/material/dialog';
+import { UpdateNoteComponent } from '../update-note/update-note.component';
 
 @Component({
   selector: 'app-display-note-cards',
@@ -8,22 +8,25 @@ import { CreateNotesComponent } from '../create-notes/create-notes.component';
   styleUrls: ['./display-note-cards.component.scss']
 })
 export class DisplayNoteCardsComponent implements OnInit {
-
-  @Input() NotesList !:any
-  constructor(private dialogBox: MatDialog) { }
+  title:any
+  description:any
+  @Input() NotesList:any
+  constructor(public dialogBox: MatDialog) { }
 
   ngOnInit(): void {
     console.log(this.NotesList)
   }
 
-  showDialogBox(data:any): void{
-    const dialog = this.dialogBox.open(CreateNotesComponent, data);
-    dialog.afterClosed().subscribe(result => {
-      console.log(`dialogbox: ${result}`);
+  showDialogBox(noteDetails:any): void {
+    const dialogRef = this.dialogBox.open(UpdateNoteComponent, {
+      width: '600px',
+      data:noteDetails,
     });
 
-    dialog.afterClosed().subscribe(result => {
-      console.log("dialogbox closed");
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.title = result;
+      this.description = result;
     });
   }
 }

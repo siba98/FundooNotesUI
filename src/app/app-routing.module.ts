@@ -11,6 +11,7 @@ import { SidenavComponent } from './Components/sidenav/sidenav.component';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
 import { DisplayNoteCardsComponent } from './Components/display-note-cards/display-note-cards.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { UpdateNoteComponent } from './Components/update-note/update-note.component';
 
 const routes: Routes = [
   {path:"register", component:RegisterComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path:"sidenav", component:SidenavComponent},
   {path:"get-all-notes", component:GetAllNotesComponent},
   {path:"display-note-cards", component:DisplayNoteCardsComponent},
+  {path:"update-note", component:UpdateNoteComponent},
 ];
 
 @NgModule({

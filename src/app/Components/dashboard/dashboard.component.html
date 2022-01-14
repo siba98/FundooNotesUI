@@ -41,8 +41,7 @@
         </div>
     </mat-card>
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
-            fixedTopGap="56">
+        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
             <div class="container">
                 <mat-nav-list>
                     <app-sidenav></app-sidenav>
@@ -51,7 +50,7 @@
         </mat-sidenav>
         <div class="notescontent">
             <div class="upperone">
-                <app-create-notes></app-create-notes>
+                <!-- <app-create-notes></app-create-notes> -->
             </div>
             <div class="lowerone">
                 <app-get-all-notes></app-get-all-notes>

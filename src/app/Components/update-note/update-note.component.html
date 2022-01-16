@@ -1,15 +1,15 @@
 <mat-dialog-content class="dialogbox">
     <form [formGroup]="updateNoteForm">
-        <div class="TitleAndNote">
-            <input matInput type="text" formControlName= "title">
+        <div class="Titlenote">
+            <input matInput type="text" formControlName= "title" [value]="title">
             <button mat-icon-button matTooltip="Pin note">
                 <img src="../../../assets/outline_push_pin_black_24dp.png">
             </button>
         </div>
-        <div class="TitleAndNote">
-            <input matInput type="text" formControlName= "description">
+        <div class="Titlenote">
+            <input matInput type="text" formControlName= "description" [value]="description">
         </div>
-        <div class="TitleAndNote">
+        <div class="Titlenote">
             <div class="NoteIcons">
                 <app-icons></app-icons>
             </div>

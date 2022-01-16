@@ -12,11 +12,16 @@
         <button mat-icon-button matTooltip="Add image">
             <img src="../../../assets/outline_image_black_24dp.png">
         </button>
-        <button mat-icon-button matTooltip="Archive">
+        <button (click)= "ArchiveNote()" mat-icon-button matTooltip="Archive">
             <img src="../../../assets/outline_archive_black_24dp.png">
         </button>
-        <button mat-icon-button matTooltip="More">
+        <button [matMenuTriggerFor]="menu" mat-icon-button matTooltip="More">
             <mat-icon mat-list-icon class="material-icons-outlined">more_vert</mat-icon>
         </button>
+
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="TrashNote()">Delete note</button>
+            <button mat-menu-item>Add label</button>
+          </mat-menu>
     </div>
 </div>

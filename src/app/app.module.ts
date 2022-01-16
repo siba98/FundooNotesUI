@@ -30,6 +30,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatDialogModule} from '@angular/material/dialog';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { UpdateNoteComponent } from './Components/update-note/update-note.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { GetTrashNotesComponent } from './Components/get-trash-notes/get-trash-notes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +45,8 @@ import { UpdateNoteComponent } from './Components/update-note/update-note.compon
     SidenavComponent,
     GetAllNotesComponent,
     DisplayNoteCardsComponent,
-    UpdateNoteComponent
+    UpdateNoteComponent,
+    GetTrashNotesComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,8 @@ import { UpdateNoteComponent } from './Components/update-note/update-note.compon
     MatListModule,
     MatDialogModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatMenuModule
   ],
   providers: [AuthguardServiceService],
   bootstrap: [AppComponent]

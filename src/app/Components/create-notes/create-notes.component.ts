@@ -10,9 +10,9 @@ import { NoteServiceService } from 'src/app/Services/NoteService/note-service.se
 export class CreateNotesComponent implements OnInit {
   addNoteForm!: FormGroup;
   submitted = false;
-  displayBar=true;
-  title:any
-  description:any
+  displayBar = true;
+  title: any
+  description: any
 
   constructor(private formBuilder: FormBuilder, private noteService: NoteServiceService) { }
 
@@ -20,26 +20,25 @@ export class CreateNotesComponent implements OnInit {
   ngOnInit(): void {
     this.addNoteForm = this.formBuilder.group({
       title: null,
-      description:null,
+      description: null,
     })
   }
-  get f() { return this.addNoteForm.controls;}
-  openbar(){
-    this.displayBar=false;
-  }
-  onSubmit(){
-    this.submitted = true;
-    if(this.addNoteForm.valid){
-      let data={
-        title: this.addNoteForm.value.title,
-        description: this.addNoteForm.value.description,
-      }
-      this.noteService.Addnote(data).subscribe((response:any)=>{
-        console.log(response);
-        this.AddnoteAutorefresh.emit(response)
-      }, error => {
-        console.log(error);
+
+  onSubmit() {
+    try {
+      this.openbar()
+      this.noteService.Addnote(this.addNoteForm.value).subscribe((response: any) => {
+        if (response.status) {
+          console.log(response.message);
+        }
       })
     }
+    catch (error) {
+      console.log(error);
+    };
   }
+  openbar() {
+    this.displayBar ? this.displayBar = false : this.displayBar = true
+  };
 }
+

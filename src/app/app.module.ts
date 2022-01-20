@@ -33,6 +33,7 @@ import { UpdateNoteComponent } from './Components/update-note/update-note.compon
 import {MatMenuModule} from '@angular/material/menu';
 import { GetTrashNotesComponent } from './Components/get-trash-notes/get-trash-notes.component';
 import { GetArchiveNotesComponent } from './Components/get-archive-notes/get-archive-notes.component';
+import { GetReminderNotesComponent } from './Components/get-reminder-notes/get-reminder-notes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +49,8 @@ import { GetArchiveNotesComponent } from './Components/get-archive-notes/get-arc
     DisplayNoteCardsComponent,
     UpdateNoteComponent,
     GetTrashNotesComponent,
-    GetArchiveNotesComponent
+    GetArchiveNotesComponent,
+    GetReminderNotesComponent
   ],
   imports: [
     BrowserModule,

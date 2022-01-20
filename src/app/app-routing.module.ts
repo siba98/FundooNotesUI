@@ -14,6 +14,7 @@ import { AuthenticationGuard } from './authentication.guard';
 import { UpdateNoteComponent } from './Components/update-note/update-note.component';
 import { GetTrashNotesComponent } from './Components/get-trash-notes/get-trash-notes.component';
 import { GetArchiveNotesComponent } from './Components/get-archive-notes/get-archive-notes.component';
+import { GetReminderNotesComponent } from './Components/get-reminder-notes/get-reminder-notes.component';
 
 const routes: Routes = [
   {path:"register", component:RegisterComponent},
@@ -28,7 +29,8 @@ const routes: Routes = [
     {path:'',redirectTo:"get-all-notes", pathMatch:'full'},
     {path:"get-all-notes", component:GetAllNotesComponent},
     {path:"get-trash-notes", component:GetTrashNotesComponent},
-  {path:"get-archive-notes", component:GetArchiveNotesComponent},
+    {path:"get-archive-notes", component:GetArchiveNotesComponent},
+    {path:"get-reminder-notes", component:GetReminderNotesComponent},
   ]
 },
   {path:"sidenav", component:SidenavComponent},
@@ -37,6 +39,7 @@ const routes: Routes = [
   {path:"update-note", component:UpdateNoteComponent},
   {path:"get-trash-notes", component:GetTrashNotesComponent},
   {path:"get-archive-notes", component:GetArchiveNotesComponent},
+  {path:"get-reminder-notes", component:GetReminderNotesComponent},
 ];
 
 @NgModule({

@@ -1,14 +1,23 @@
 <div class="totalpage">
     <mat-card class="notecard" *ngFor='let noteDetails of NotesList' [style.background]=noteDetails.colour>
         <mat-card-title-group (click)="showDialogBox(noteDetails)">
-            <mat-card-title>
-                {{noteDetails.title}}
-            </mat-card-title>
-            <mat-card-subtitle>
-                <p>
-                    {{noteDetails.description}}
-                </p>
-            </mat-card-subtitle>
+            <div class="allthree">
+                <div class="dual">
+                    <mat-card-title>
+                        {{noteDetails.title}}
+                    </mat-card-title>
+                    <div class="pinicon">
+                        <button (click)="PinNote(noteDetails)" mat-icon-button matTooltip="Pin note">
+                            <img src="../../../assets/outline_push_pin_black_24dp.png">
+                        </button>
+                    </div>
+                </div>
+                <mat-card-subtitle>
+                    <p>
+                        {{noteDetails.description}}
+                    </p>
+                </mat-card-subtitle>
+            </div>
         </mat-card-title-group>
         <mat-card-content>
             <app-icons [noteObject]="noteDetails"></app-icons>

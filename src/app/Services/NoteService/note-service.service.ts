@@ -46,4 +46,13 @@ export class NoteServiceService {
   TrashNote(data:any){
     return this.httpservice.put(`${this.baseUrl}/api/Note/trashNotes/${data}`,null, true, this.header);
   }
+  PinNote(data:any){
+    return this.httpservice.put(`${this.baseUrl}/api/Note/pinOrUnPinnedNotes/${data}`,null, true, this.header);
+  }
+  AllTrashNotes() {
+    return this.httpservice.get(`${this.baseUrl}/api/Note/getTrash?UserId=${localStorage.getItem("userId")}`, true, this.header);
+  }
+  AllArchivedNotes() {
+    return this.httpservice.get(`${this.baseUrl}/api/Note/getArchive?UserId=${localStorage.getItem("userId")}`, true, this.header);
+  }
 }

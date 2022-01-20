@@ -33,17 +33,6 @@ export class UpdateNoteComponent implements OnInit {
   }
 
   onSubmit() {
-    // try{
-    //   console.log(this.updateNoteForm);
-    //   this.noteService.Updatenote(this.updateNoteForm.value).subscribe((response: any) => {
-    //     if(response.status){
-    //       console.log(response.message);
-    //     }
-    //   })
-    // }
-    // catch(error){
-    //   console.log(error);
-    // }
     this.submitted = true;
     if (this.updateNoteForm.valid) {
       let data = {

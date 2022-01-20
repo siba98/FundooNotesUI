@@ -34,9 +34,12 @@
                 <button mat-icon-button matTooltip="apps">
                     <mat-icon>apps</mat-icon>
                 </button>
-                <button mat-icon-button matTooltip="Account">
+                <button [matMenuTriggerFor]="account" mat-icon-button matTooltip=" Fundoo account">
                     <img src="../../../assets/outline_account_circle_black_24dp.png">
                 </button>
+                <mat-menu #account="matMenu">
+                    <button mat-menu-item (click)="SignOut()">Sign out</button>
+                </mat-menu>
             </div>
         </div>
     </mat-card>
@@ -48,10 +51,9 @@
                 </mat-nav-list>
             </div>
         </mat-sidenav>
-        <div class="notescontent">
             <div class="lowerone">
-                <app-get-all-notes></app-get-all-notes>
+                <router-outlet></router-outlet>
+                <!-- <app-get-all-notes></app-get-all-notes> -->
             </div>
-        </div>
     </mat-sidenav-container>
 </div>

@@ -32,6 +32,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { UpdateNoteComponent } from './Components/update-note/update-note.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { GetTrashNotesComponent } from './Components/get-trash-notes/get-trash-notes.component';
+import { GetArchiveNotesComponent } from './Components/get-archive-notes/get-archive-notes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,8 @@ import { GetTrashNotesComponent } from './Components/get-trash-notes/get-trash-n
     GetAllNotesComponent,
     DisplayNoteCardsComponent,
     UpdateNoteComponent,
-    GetTrashNotesComponent
+    GetTrashNotesComponent,
+    GetArchiveNotesComponent
   ],
   imports: [
     BrowserModule,

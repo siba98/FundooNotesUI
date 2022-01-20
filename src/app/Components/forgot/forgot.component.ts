@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import { UserServiceService } from 'src/app/Services/UserService/user-service.service';
 
 @Component({
@@ -10,7 +12,7 @@ import { UserServiceService } from 'src/app/Services/UserService/user-service.se
 export class ForgotComponent implements OnInit {
   show: boolean = false;
   forgotForm!: FormGroup;
-  constructor(private formBuilder: FormBuilder, private userService: UserServiceService) { }
+  constructor(private formBuilder: FormBuilder, private userService: UserServiceService,private snackBar: MatSnackBar,private router : Router) { }
 
   ngOnInit(): void {
     this.forgotForm = this.formBuilder.group({
@@ -22,7 +24,8 @@ export class ForgotComponent implements OnInit {
     try {
       this.userService.Forgot(this.forgotForm.value).subscribe((response: any) => {
         if (response.status)
-          console.log("Link sent for reseting the password", response);
+        this.router.navigate(['/login'])
+        this.snackBar.open(response.message,'',{duration :4000})
       })
     }
     catch (error) {

@@ -1,29 +1,29 @@
 <div class="sideicons">
-    <button mat-button>
-        <div class="sidebarevents">
+    <button routerLink="/dashboard/get-all-notes" mat-button>
+        <div class="sidebarevents" fxLayout="row">
             <img src="../../../assets/outline_lightbulb_black_24dp.png">
             <div class="Titles">Notes</div>
         </div>
     </button>
     <button mat-button>
-        <div class="sidebarevents">
+        <div class="sidebarevents" fxLayout="row">
             <img src="../../../assets/outline_notifications_black_24dp.png">
             <div class="Titles">Reminders</div>
         </div>
     </button>
     <button mat-button>
-        <div class="sidebarevents">
+        <div class="sidebarevents" fxLayout="row">
             <img src="../../../assets/outline_mode_edit_outline_black_24dp.png">
             <div class="Titles">Edit labels</div>
         </div>
     </button>
-    <button mat-button>
-        <div class="sidebarevents">
+    <button routerLink="/dashboard/get-archive-notes" mat-button>
+        <div class="sidebarevents" fxLayout="row">
             <img src="../../../assets/outline_archive_black_24dp.png">
             <div class="Titles">Archive</div>
         </div>
     </button>
-    <button (click)="DisplayTrash()" mat-button>
+    <button routerLink="/dashboard/get-trash-notes" mat-button fxLayout="row">
         <div class="sidebarevents">
             <img src="../../../assets/outline_delete_outline_black_24dp.png">
             <div class="Titles">Trash</div>

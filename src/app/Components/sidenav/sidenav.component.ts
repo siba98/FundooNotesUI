@@ -12,7 +12,5 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  DisplayTrash(){
-    this.router.navigateByUrl("/dashboard/get-trash-notes")
-  }
+
 }

@@ -7,11 +7,11 @@ import { AuthguardServiceService } from './Services/AuthguardService/authguard-s
   providedIn: 'root'
 })
 export class AuthenticationGuard implements CanActivate {
-  constructor(private Authguardservice: AuthguardServiceService, private router: Router) {}
-  canActivate():boolean{
-    if (!this.Authguardservice.gettoken()) {  
-      this.router.navigateByUrl("/login");  
-  }  
-  return this.Authguardservice.gettoken(); 
+  constructor(private Authguardservice: AuthguardServiceService, private router: Router) { }
+  canActivate(): boolean {
+    if (!this.Authguardservice.gettoken()) {
+      this.router.navigateByUrl("/login");
+    }
+    return this.Authguardservice.gettoken();
   }
 }

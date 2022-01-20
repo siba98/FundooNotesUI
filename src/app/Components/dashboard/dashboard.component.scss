@@ -1,7 +1,7 @@
 .DashboardPage{
+    background-color: rgb(13, 202, 139);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .ToolCard{
     height: 40px;
@@ -49,45 +49,11 @@
     height: 45px;
     gap: 3px;
 }
-.Sidebar{
-    padding: 10px;
-}
 .container{
-    width: 19vw;
-    display: flex;
-}
-.sidebarevents{
-    display: flex;
-}
-.Titles{
-display: flex;
-font-size: medium;
-justify-content: center;
-align-items: center;
-}
-.notesfield{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.example-sidenav-container{
-    height: auto;
-}
-.notescontent{
-    display: flex;
-    height: 100%;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-.upperone{
-    align-items: center;
-    height: max-content;
+    height: 70vh;
+    width: 17vw;
 }
 .lowerone{
-    display: flex;
-padding: 30px;
-justify-content: space-around;
-align-items: center;
-    height: max-content;
+    position: relative;
+    top: 20px;
 }

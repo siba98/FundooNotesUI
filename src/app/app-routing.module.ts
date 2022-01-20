@@ -13,6 +13,7 @@ import { DisplayNoteCardsComponent } from './Components/display-note-cards/displ
 import { AuthenticationGuard } from './authentication.guard';
 import { UpdateNoteComponent } from './Components/update-note/update-note.component';
 import { GetTrashNotesComponent } from './Components/get-trash-notes/get-trash-notes.component';
+import { GetArchiveNotesComponent } from './Components/get-archive-notes/get-archive-notes.component';
 
 const routes: Routes = [
   {path:"register", component:RegisterComponent},
@@ -24,8 +25,10 @@ const routes: Routes = [
   {path:"icons", component:IconsComponent},
   {path:"dashboard", component:DashboardComponent, canActivate:[AuthenticationGuard],
   children:[
-    {path:'',redirectTo:"create-notes", pathMatch:'full'},
-    {path:"create-notes", component:CreateNotesComponent},
+    {path:'',redirectTo:"get-all-notes", pathMatch:'full'},
+    {path:"get-all-notes", component:GetAllNotesComponent},
+    {path:"get-trash-notes", component:GetTrashNotesComponent},
+  {path:"get-archive-notes", component:GetArchiveNotesComponent},
   ]
 },
   {path:"sidenav", component:SidenavComponent},
@@ -33,6 +36,7 @@ const routes: Routes = [
   {path:"display-note-cards", component:DisplayNoteCardsComponent},
   {path:"update-note", component:UpdateNoteComponent},
   {path:"get-trash-notes", component:GetTrashNotesComponent},
+  {path:"get-archive-notes", component:GetArchiveNotesComponent},
 ];
 
 @NgModule({

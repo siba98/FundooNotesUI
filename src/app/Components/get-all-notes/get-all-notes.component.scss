@@ -1,10 +1,13 @@
 .displaynotes{
     display: flex;
-    padding: 45px;
-}
-.makenote{
     position: relative;
-    top: -40px;
-
-    
+    top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.all{
+    border: 1px solid red;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
 }

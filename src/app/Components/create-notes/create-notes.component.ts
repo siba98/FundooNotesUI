@@ -28,6 +28,7 @@ export class CreateNotesComponent implements OnInit {
     try {
       this.openbar()
       this.noteService.Addnote(this.addNoteForm.value).subscribe((response: any) => {
+        this.AddnoteAutorefresh.emit(response)
         if (response.status) {
           console.log(response.message);
         }
